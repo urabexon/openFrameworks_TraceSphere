@@ -52,7 +52,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    points.push_back(glm::vec3(x, y, 0));
+    // points.push_back(glm::vec3(x, y, 0));
     if(!gDisableInteraction) {
         pMx = x;
         pMy = y;
