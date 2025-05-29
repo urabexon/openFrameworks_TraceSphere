@@ -2,7 +2,10 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    ofLogToConsole();
+    ofEnableAntiAliasing();
+    ofEnableSmoothing();
+    ofSetSmoothLighting(true);
 }
 
 //--------------------------------------------------------------
@@ -12,7 +15,8 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    ofSetColor(0);
+    ofLog() << meshPrimary.getCentroid();
 }
 
 //--------------------------------------------------------------
