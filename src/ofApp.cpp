@@ -32,7 +32,12 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    if(key == 'f')
+        ofToggleFullscreen();
+    else if(key == 'c')
+        clearCanvas();
+    else if(key == 'd')
+        isDebug ^= true;
 }
 
 //--------------------------------------------------------------
