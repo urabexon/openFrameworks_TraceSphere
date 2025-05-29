@@ -11,6 +11,12 @@ void ofApp::setup(){
     ofxGuiSetFont( "../../../../../../assets/DIN.otf", 8 );
     ofxGuiSetDefaultWidth( 300 );
     ofxGuiSetFillColor(ofColor(255,204,0,200));
+
+    string xmlSettingsPath = "generativeDrawing_settings.xml";
+    gui.setup( "Drawing Parameters", xmlSettingsPath );
+    gui.add(gDrawingMode.set("Drawing Mode", 0, 0, 4)); // Number of Tentacles
+    gui.add(gEnableCameraTracking.set("Enable Target Tracking", false));
+    gui.add(gCameraTrackingOff.set("Camera Target Offset", glm::vec3(0,0,260), glm::vec3(-1000), glm::vec3(1000)));
 }
 
 //--------------------------------------------------------------
