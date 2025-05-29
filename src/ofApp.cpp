@@ -6,6 +6,11 @@ void ofApp::setup(){
     ofEnableAntiAliasing();
     ofEnableSmoothing();
     ofSetSmoothLighting(true);
+
+    // do not forget to replace the following path your own ttf/otf font file path
+    ofxGuiSetFont( "../../../../../../assets/DIN.otf", 8 );
+    ofxGuiSetDefaultWidth( 300 );
+    ofxGuiSetFillColor(ofColor(255,204,0,200));
 }
 
 //--------------------------------------------------------------
