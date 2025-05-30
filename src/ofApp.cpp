@@ -35,7 +35,9 @@ void ofApp::setup(){
     gui.setPosition(0, 0);
     gui.loadFromFile(xmlSettingsPath);
 
-
+    // Set background color
+    ofBackground(0);
+    count = 0;
 }
 
 //--------------------------------------------------------------
