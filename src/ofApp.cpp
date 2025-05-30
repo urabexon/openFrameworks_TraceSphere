@@ -32,6 +32,9 @@ void ofApp::setup(){
     gui.add(gRotationSpeed.set("Rotation Speed", 6, 1, 30));
     gui.add(gPathColor.set("Path Color", ofColor(255), ofColor(0), ofColor(255)));
     gui.add(gConnectionColor.set("Connection Color", ofColor(255), ofColor(0), ofColor(255)));
+    gui.setPosition(0, 0);
+    gui.loadFromFile(xmlSettingsPath);
+
 
 }
 
