@@ -17,6 +17,12 @@ void ofApp::setup(){
     gui.add(gDrawingMode.set("Drawing Mode", 0, 0, 4)); // Number of Tentacles
     gui.add(gEnableCameraTracking.set("Enable Target Tracking", false));
     gui.add(gCameraTrackingOff.set("Camera Target Offset", glm::vec3(0,0,260), glm::vec3(-1000), glm::vec3(1000)));
+    gui.add(gEnableAutoClear.set("Enable Auto Clear Canvas", true));
+    gui.add(gEnableRotation.set("Enable Canvas Rotation", false));
+    gui.add(gDisableInteraction.set("Disable Interaction", true));
+    gui.add(gDistanceThres.set("Distance Threshold", 150, 5, 1000));
+    gui.add(gLineW.set("Line Width", 2, 1, 4));
+    gui.add(gNoiseVals.set("Noise Multipliers", glm::vec3(0.002), glm::vec3(0.00001, 0.00001, 0.00001), glm::vec3(20)));
 }
 
 //--------------------------------------------------------------
