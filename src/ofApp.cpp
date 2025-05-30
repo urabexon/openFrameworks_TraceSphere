@@ -31,6 +31,13 @@ void ofApp::draw(){
 }
 
 //--------------------------------------------------------------
+void ofApp::clearCanvas(){
+    meshConnection.clear();
+    meshPrimary.clear();
+    points.clear();
+}
+
+//--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     if(key == 'f')
         ofToggleFullscreen();
