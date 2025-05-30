@@ -23,6 +23,16 @@ void ofApp::setup(){
     gui.add(gDistanceThres.set("Distance Threshold", 150, 5, 1000));
     gui.add(gLineW.set("Line Width", 2, 1, 4));
     gui.add(gNoiseVals.set("Noise Multipliers", glm::vec3(0.002), glm::vec3(0.00001, 0.00001, 0.00001), glm::vec3(20)));
+    gui.add(gEnableDepthTest.set("Enable Depth Test", true));
+    gui.add(gEnableLight.set("Enable Lighting", true));
+    gui.add(gShowLight.set("Show Light", true));
+    gui.add(gLightPos.set("Object Light Position", glm::vec3(0), glm::vec3(-3000), glm::vec3(3000)));
+    gui.add(gLightAreaPos.set("Area Light Position", glm::vec3(0), glm::vec3(-5000), glm::vec3(5000)));
+    gui.add(gAnimationSpeed.set("Animation Speed", 0.2, 0.01, 3));
+    gui.add(gRotationSpeed.set("Rotation Speed", 6, 1, 30));
+    gui.add(gPathColor.set("Path Color", ofColor(255), ofColor(0), ofColor(255)));
+    gui.add(gConnectionColor.set("Connection Color", ofColor(255), ofColor(0), ofColor(255)));
+
 }
 
 //--------------------------------------------------------------
