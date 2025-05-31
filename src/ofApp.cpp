@@ -121,6 +121,9 @@ void ofApp::draw(){
         zC = ofSignedNoise(t, 0, gNoiseVals->z) * 1000;
         stroke(xC, yC, zC);
     }
+    meshConnection.draw();
+    meshPrimary.draw();
+
     
 }
 
