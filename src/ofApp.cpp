@@ -129,6 +129,12 @@ void ofApp::draw(){
     ofDrawSphere(mps[mps.size() - 1].x, mps[mps.size() - 1].y, mps[mps.size() - 1].z, 5);
     ofPopStyle();
     ofPopMatrix();
+    if(gEnableLight) {
+        ofDisableLighting();
+        light.disable();
+    }
+    cam.end();
+    ofDisableDepthTest();
 }
 
 //--------------------------------------------------------------
