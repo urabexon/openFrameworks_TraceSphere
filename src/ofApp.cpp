@@ -63,6 +63,13 @@ void ofApp::draw(){
         ofLog() << "mesh vertex num: " << points.size();
         clearCanvas();
     }
+    if(gEnableDepthTest)
+        ofEnableDepthTest();
+    ofEnableAlphaBlending();
+
+    // Draw light
+
+    // Camera tracking
 }
 
 //--------------------------------------------------------------
