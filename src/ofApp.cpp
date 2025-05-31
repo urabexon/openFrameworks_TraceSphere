@@ -38,6 +38,13 @@ void ofApp::setup(){
     // Set background color
     ofBackground(0);
     count = 0;
+
+    lightArea.setAreaLight(ofGetWidth(), ofGetWidth());
+    lightArea.setSpecularColor(ofFloatColor(1.0, 1.0, 1.0));
+    lightArea.setDiffuseColor(ofFloatColor(0.8, 0.8, 0.8));
+    lightArea.setAmbientColor(ofFloatColor(0.2, 0.2, 0.2));
+    lightArea.enable();
+    rad = 4;
 }
 
 //--------------------------------------------------------------
