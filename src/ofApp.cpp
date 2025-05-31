@@ -68,8 +68,13 @@ void ofApp::draw(){
     ofEnableAlphaBlending();
 
     // Draw light
+    if(gEnableLight)
+        light.setPosition(gLightPos->x, gLightPos->y, gLightPos->z);
+    if(gShowLight && gEnableLight)
+        light.draw();
 
     // Camera tracking
+    
 }
 
 //--------------------------------------------------------------
