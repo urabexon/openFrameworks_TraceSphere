@@ -135,6 +135,11 @@ void ofApp::draw(){
     }
     cam.end();
     ofDisableDepthTest();
+    // DEBUG
+    if(isDebug) {
+        gui.draw();
+        utils.drawFPS(ofxFilikaAlignment::TOP_RIGHT);
+    }
 }
 
 //--------------------------------------------------------------
