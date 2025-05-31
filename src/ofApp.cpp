@@ -96,6 +96,15 @@ void ofApp::draw(){
     lightArea.setPosition(gLightAreaPos);
 
     // Draw huge sphere
+    ofPushMatrix();
+        glPointSize(1);
+        ofSetColor(255);
+        ofRotateRad(ofDegToRad(ofGetElapsedTimef()*gRotationSpeed/2), 0, 1, 0);
+        meshGlobe = ofMesh::sphere(ofGetWidth()*1.5, 48, ofPrimitiveMode::OF_PRIMITIVE_TRIANGLE_STRIP);
+        meshGlobe.drawVertices();
+        ofSetColor(0);
+        meshGlobe.drawFaces();
+    ofPopMatrix();
 }
 
 //--------------------------------------------------------------
