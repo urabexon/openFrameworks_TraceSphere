@@ -54,8 +54,15 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofSetColor(0);
-    ofLog() << meshPrimary.getCentroid();
+    // ofSetColor(0);
+    // ofLog() << meshPrimary.getCentroid();
+    float t = ofGetElapsedTimef() * gAnimationSpeed;
+    vector<glm::vec3> & mps = meshPrimary.getVertices();
+
+    if(gEnableAutoClear && ofGetFrameRate() < 40 && points.size() > 100) {
+        ofLog() << "mesh vertex num: " << points.size();
+        clearCanvas();
+    }
 }
 
 //--------------------------------------------------------------
