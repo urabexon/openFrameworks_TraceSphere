@@ -155,7 +155,16 @@ void ofApp::stroke(float x, float y, float z) {
         d = glm::length(m - points[i]);
 
         float rand = ofRandom(0,1);
+        if(d < gDistanceThres && rand > 0.2 && rand < 0.34) {
+            op = ofMap(d, 0, gDistanceThres, 255, 0);
+            meshConnection.setMode(OF_PRIMITIVE_LINES);
+            meshConnection.addColor(ofColor(gConnectionColor->r,gConnectionColor->g,gConnectionColor->b,op));
+            meshConnection.addVertex(m);
+            meshConnection.addColor(ofColor(gConnectionColor->r,gConnectionColor->g,gConnectionColor->b,op));
+            meshConnection.addVertex(points[i]);
+        }
     }
+    meshPrimary.setMode(OF_PRIMITIVE_LINES);
 }
 
 //--------------------------------------------------------------
