@@ -82,6 +82,18 @@ void ofApp::draw(){
         this->cam.lookAt(target);
     }
 
+    cam.begin();
+
+    // Enable Light
+    if(gEnableLight) {
+        light.enable();
+        ofEnableLighting();
+    }
+    
+    ofPushMatrix();
+
+    // Sphere light
+
 }
 
 //--------------------------------------------------------------
