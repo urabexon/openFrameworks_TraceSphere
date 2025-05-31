@@ -74,7 +74,14 @@ void ofApp::draw(){
         light.draw();
 
     // Camera tracking
-    
+    if(mps.size() > 0 && gEnableCameraTracking) {
+        auto target = glm::vec3(mps[mps.size() - 1].x, mps[mps.size() - 1].y, mps[mps.size() - 1].z);
+        auto camera_location = target + gCameraTrackingOff.get();
+        this->cam.setPosition(camera_location);
+        this->cam.setTarget(target);
+        this->cam.lookAt(target);
+    }
+
 }
 
 //--------------------------------------------------------------
