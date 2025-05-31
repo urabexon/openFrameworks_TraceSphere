@@ -105,6 +105,23 @@ void ofApp::draw(){
         ofSetColor(0);
         meshGlobe.drawFaces();
     ofPopMatrix();
+
+    if(gEnableRotation)
+        ofRotateRad(ofDegToRad(-ofGetElapsedTimef()*gRotationSpeed), 1, 1, 1);
+    ofSetColor(255,30);
+
+    if(gDrawingMode == 0) {
+        float xp = cos(t) * rad;
+        float yp = sin(t) * rad;
+        stroke(xp, yp, 0);
+        rad = rad + 0.7;
+    } else if(gDrawingMode == 1) {
+        xC = ofSignedNoise(gNoiseVals->x, 0, t) * 650;
+        yC = ofSignedNoise(0, gNoiseVals->y, t) * 500;
+        zC = ofSignedNoise(t, 0, gNoiseVals->z) * 1000;
+        stroke(xC, yC, zC);
+    }
+    
 }
 
 //--------------------------------------------------------------
