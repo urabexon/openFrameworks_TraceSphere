@@ -124,7 +124,11 @@ void ofApp::draw(){
     meshConnection.draw();
     meshPrimary.draw();
 
-    
+    ofPushStyle();
+    ofSetColor(255, 0, 0);
+    ofDrawSphere(mps[mps.size() - 1].x, mps[mps.size() - 1].y, mps[mps.size() - 1].z, 5);
+    ofPopStyle();
+    ofPopMatrix();
 }
 
 //--------------------------------------------------------------
