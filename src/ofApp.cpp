@@ -143,6 +143,22 @@ void ofApp::draw(){
 }
 
 //--------------------------------------------------------------
+void ofApp::stroke(float x, float y, float z) {
+    float d;
+    float op;
+
+    for (int i = 0; i < points.size(); i++) {
+        glm::vec3 m;
+        m.x = x;
+        m.y = y;
+        m.z = z;
+        d = glm::length(m - points[i]);
+
+        float rand = ofRandom(0,1);
+    }
+}
+
+//--------------------------------------------------------------
 void ofApp::clearCanvas(){
     meshConnection.clear();
     meshPrimary.clear();
