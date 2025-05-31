@@ -93,7 +93,9 @@ void ofApp::draw(){
     ofPushMatrix();
 
     // Sphere light
+    lightArea.setPosition(gLightAreaPos);
 
+    // Draw huge sphere
 }
 
 //--------------------------------------------------------------
