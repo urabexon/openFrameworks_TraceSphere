@@ -165,6 +165,13 @@ void ofApp::stroke(float x, float y, float z) {
         }
     }
     meshPrimary.setMode(OF_PRIMITIVE_LINES);
+    float mapDepthCl = ofMap(z, -1000, 1000, 4, 1);
+    if(meshPrimary.getVertices().size() == 0) {
+        pMx = x;
+        pMy = y;
+        pMz = z;
+    }
+    
 }
 
 //--------------------------------------------------------------
