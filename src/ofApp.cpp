@@ -171,7 +171,16 @@ void ofApp::stroke(float x, float y, float z) {
         pMy = y;
         pMz = z;
     }
-    
+
+    meshPrimary.addVertex(glm::vec3(pMx, pMy, pMz));
+    meshPrimary.addColor(ofColor(gPathColor->r,gPathColor->g,gPathColor->b,gPathColor->a));
+    meshPrimary.addVertex(glm::vec3(x, y, z));
+    meshPrimary.addColor(ofColor(gPathColor->r,gPathColor->g,gPathColor->b,gPathColor->a));
+    points.push_back(glm::vec3(x, y, z));
+
+    pMx = x;
+    pMy = y;
+    pMz = z;
 }
 
 //--------------------------------------------------------------
