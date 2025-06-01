@@ -21,4 +21,13 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+
+		// GUI
+    	bool isDebug;
+		ofxPanel gui;
+    	ofParameter<int> gDrawingMode;
+    	ofParameter<bool> gEnableRotation;
+    	ofParameter<bool> gEnableAutoClear;
+    	ofParameter<bool> gDisableInteraction;
+    	ofParameter<bool> gShowLight;
 };
