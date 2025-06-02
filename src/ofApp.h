@@ -42,5 +42,11 @@ class ofApp : public ofBaseApp{
     	ofParameter<glm::vec3> gNoiseVals;
     	ofParameter<glm::vec3> gLightPos;
     	ofParameter<glm::vec3> gLightAreaPos;
-		
+
+		float pMx, pMy, pMz, count;
+    	float xC;
+    	float yC;
+    	float zC;
+    	vector<glm::vec3> points;
+		ofxFilikaUtils utils;
 };
