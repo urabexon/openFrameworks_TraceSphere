@@ -30,4 +30,11 @@ class ofApp : public ofBaseApp{
     	ofParameter<bool> gEnableAutoClear;
     	ofParameter<bool> gDisableInteraction;
     	ofParameter<bool> gShowLight;
+		ofParameter<bool> gEnableLight;
+    	ofParameter<bool> gEnableDepthTest;
+    	ofParameter<bool> gEnableCameraTracking;
+    	ofParameter<glm::vec3> gCameraTrackingOff;
+    	ofParameter<ofColor> gPathColor;
+    	ofParameter<ofColor> gConnectionColor;
+    	ofParameter<float> gAnimationSpeed, gRotationSpeed;
 };
