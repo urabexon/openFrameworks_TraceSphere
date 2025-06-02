@@ -56,5 +56,8 @@ class ofApp : public ofBaseApp{
     	void clearCanvas();
     	float rad;
 
-		
+		// 3DSceneCam
+    	ofEasyCam cam;
+    	ofLight light;
+    	ofLight lightArea
 };
