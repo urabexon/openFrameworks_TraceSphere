@@ -37,4 +37,10 @@ class ofApp : public ofBaseApp{
     	ofParameter<ofColor> gPathColor;
     	ofParameter<ofColor> gConnectionColor;
     	ofParameter<float> gAnimationSpeed, gRotationSpeed;
+		ofParameter<float> gDistanceThres;
+    	ofParameter<int> gLineW;
+    	ofParameter<glm::vec3> gNoiseVals;
+    	ofParameter<glm::vec3> gLightPos;
+    	ofParameter<glm::vec3> gLightAreaPos;
+		
 };
