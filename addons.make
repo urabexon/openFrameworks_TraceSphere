@@ -1,2 +1,2 @@
+ofxFilika
 ofxGui
-ofxFilikaUtils
