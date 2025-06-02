@@ -49,4 +49,12 @@ class ofApp : public ofBaseApp{
     	float zC;
     	vector<glm::vec3> points;
 		ofxFilikaUtils utils;
+		ofMesh meshPrimary;
+    	ofMesh meshConnection;
+    	ofMesh meshGlobe;
+    	void stroke(float x, float y, float z);
+    	void clearCanvas();
+    	float rad;
+
+		
 };
