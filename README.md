@@ -1,30 +1,42 @@
-# About emptyExample
+# TraceSphere 💫
 
-![Screenshot of emptyExample](emptyExample.png)
+A generative visualization that traces particles over a spherical surface in 3D space - built using openFrameworks.<br>
+Inspired by particle systems and geometric motion, this project explores visual expression through motion and persistence.
 
-### Learning Objectives
+## Demo 📷
 
-This example is the simplest possible openFrameworks app! It does nothing. 
-
-...Well, *almost* nothing. Although it may not be apparent, the emptyExample activates all of the default system states. (For example, it sets the default fill color to white; it just doesn't happen to draw anything with it.)
-
-The emptyExample is great for making sure that your openFrameworks development environment is compiling properly. It can also be useful as a "starter template" for making simple programs. 
-
-The emptyExample will help you understand what are the bare necessities of an openFrameworks program. In this regard, you can think of it as a "Hello World" for OF. 
+![Screenshot](demo.png)
 
 
-### Expected Behavior
+## Usage 🚀
 
-When launching this app, you should see a light-gray screen. 
+1. Clone or download this repository and place it under openFrameworks/apps/myApps/.
 
-* There's no interaction. 
-* There's nothing to see. 
-* That's it. 
+2. Use the projectGenerator to set up the project.
 
-Instructions for using the app:
+3. Build and run the project.
 
-* There's nothing to do. Move along.
+4. Control the camera with your mouse to explore the trails drawn over the spherical surface.
 
-### Other classes used in this file
+## Features 📦
 
-This example uses no other classes.
+- Particles that move over a spherical surface
+- Persistent trail rendering
+- Interactive 3D camera view
+- Frame rate-stabilized update control
+
+
+## Inspiration 💡
+
+This project is inspired by natural traces of motion — such as the paths of particles, celestial bodies, or wind.<br>
+It combines geometric motion and generative aesthetics using openFrameworks' 3D capabilities to create a visually experimental piece.
+
+## Built With 🔧
+
+- openFrameworks — C++ creative coding toolkit
+- Core components used: ofEasyCam, ofVboMesh, ofPolyline, etc.
+
+---
+
+hope the world is beautiful and accelerating.  
+by **Urabexon**
